@@ -9,7 +9,7 @@ from datetime import datetime, date
 # ==================== 敏感信息配置区（外发时替换为占位符）====================
 # 路径（本地真实值，外发替换为占位符）
 PATHS = {
-    'input_folder':     r'F:\...\BI待处理数据-项目1-手动核算-py',
+    'input_folder':     r'F:\...\sproject1_manual_calc.py',
     'field_map_file':   r'F:\...\field_map.json',
     'match_file':       r'F:\...\活动名称对应一二级分类.xlsx',
     'check_file2':      r'F:\...\收入成本校验表--python校验.xlsx',
