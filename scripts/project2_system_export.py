@@ -24,7 +24,7 @@ sys.excepthook = global_exception_handler
 
 # ==================== 敏感信息配置区（外发时替换为占位符）====================
 PATHS = {
-    'input_folder':     r'F:\...\BI待处理数据-项目2-系统导出-py',
+    'input_folder':     r'F:\...\project2_system_export.py',
     'field_map_file':   r'F:\...\field_map.json',
     'match_file':       r'F:\...\活动名称对应一二级分类.xlsx',
     'second_arch_file': r'F:\...\分公司目录-新二级部门标签.xlsx',
