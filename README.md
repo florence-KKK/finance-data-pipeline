@@ -15,7 +15,7 @@ My Python automation scripts for financial data ETL and BI validation
 
 本仓库包含我为核心业务构建的四个核心Python自动化程序，覆盖了从“手工底稿整理”到“BI导入前后校验”的完整财务数据链路：
 
-### 1. 项目1-手动核算.py
+### 1. sproject1_manual_calc.py
 **功能**：处理手工核算账单，整理为标准的BI底稿。
 **核心逻辑**：
 - 自动对齐表头，清洗15位商户号。
@@ -23,21 +23,21 @@ My Python automation scripts for financial data ETL and BI validation
 - 金额单位从“元”转“分”，强制校验毛利润=奖励金额-结算金额。
 - 跨文件合并与汇总统计，输出标准BI底稿。
 
-### 2. 项目2-系统导出.py
+### 2. project2_system_export.py
 **功能**：处理系统导出数据，自动映射分类并拆分。
 **核心逻辑**：
 - 根据“活动名称”自动匹配通道、一级/二级分类。
 - 严格的数据质量守门：匹配不到直接报错阻断。
 - 按业务二级分类自动拆分文件，文件名包含账单期间。
 
-### 3. 项目3-导入BI之前校验.py
+### 3. project3_pre_bi_validation.py
 **功能**：导入BI前的数据交叉校验。
 **核心逻辑**：
 - 多源数据（线下核对表 vs 系统导出）自动合并。
 - 金额从“分”转“元”后对比，差异>0.01自动标红。
 - 按普通分润、项目、特殊分类分层输出核对结果。
 
-### 4. 项目4-导出BI数据校验.py
+### 4. project4_post_bi_validation.py
 **功能**：导入BI后的闭环校验。
 **核心逻辑**：
 - 处理BI导出的明细数据。
